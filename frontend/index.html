@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask & MySQL & Vanilla JS App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Full-Stack Playground</h1>
+            <p class="subtitle">Connecting <strong>Vanilla JS</strong>, <strong>Flask</strong>, and <strong>MySQL</strong> beautifully.</p>
+            <div id="status-badge" class="badge">Checking connection...</div>
+        </header>
+
+        <main>
+            <section class="form-section">
+                <h2>Leave a Message</h2>
+                <form id="message-form">
+                    <input type="text" id="message-input" placeholder="Type something awesome..." required autocomplete="off">
+                    <button type="submit" id="submit-btn">Send Message</button>
+                </form>
+            </section>
+
+            <section class="messages-section">
+                <h2>Recent Messages</h2>
+                <div id="messages-container" class="messages-container">
+                    <div class="loading">Loading messages...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
